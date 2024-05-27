@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generar Factura</title>
+
+    <style>
+
+        body {
+            background: #00002E;
+            color:#6098FF;
+            font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+            font-size:16px;
+        }
+
+        h1,h3 {
+            text-align: center;
+            color: darkgray;
+        }
+
+        .defini {
+            text-align: center;
+            color:#6098FF;
+            font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+        }
+
+        .product {
+            text-align: center;
+            color:#6098FF;
+            font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+        }
+
+        button{
+            background-color: #1652F0;
+            border: 1px solid #1652F0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            overflow: visible;
+            padding: 12px 16px;
+            position: relative;
+            text-align: center;
+            text-transform: none;
+            transition: all 80ms ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: fit-content;
+        }
+        button:disabled {
+            opacity: .5;
+        }
+
+        button:focus {
+            outline: 0;
+        }
+
+        button:hover {
+            background-color: #0A46E4;
+            border-color: #0A46E4;
+        }
+
+        button:active {
+            background-color: #0039D7;
+            border-color: #0039D7;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Generar Factura</h1>
+<form action="facturar" method="post">
+    <div class = "defini">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="nrc">NRC:</label>
+        <input type="text" id="nrc" name="nrc">
+
+        <label for="descripcion">Descripcion:</label>
+        <input type="text" id="descripcion" name="descripcion">
+    </div>
+
+    <div class="product">
+        <h3>Producto 1</h3>
+        <label for="producto1">Producto:</label>
+        <input type="text" id="producto1" name="producto1">
+
+        <label for="precio1">Precio:</label>
+        <input type="text" id="precio1" name="precio1">
+
+        <label for="cantidad1">Cantidad:</label>
+        <input type="text" id="cantidad1" name="cantidad1">
+    </div>
+
+    <div class="product">
+        <h3>Producto 2</h3>
+        <label for="producto2">Producto:</label>
+        <input type="text" id="producto2" name="producto2">
+
+        <label for="precio2">Precio:</label>
+        <input type="text" id="precio2" name="precio2">
+
+        <label for="cantidad2">Cantidad:</label>
+        <input type="text" id="cantidad2" name="cantidad2">
+    </div>
+
+    <div class="product">
+        <h3>Producto 3</h3>
+        <label for="producto3">Producto:</label>
+        <input type="text" id="producto3" name="producto3">
+
+        <label for="precio3">Precio:</label>
+        <input type="text" id="precio3" name="precio3">
+
+        <label for="cantidad3">Cantidad:</label>
+        <input type="text" id="cantidad3" name="cantidad3">
+    </div>
+
+    <div class="product">
+        <h3>Producto 4</h3>
+        <label for="producto4">Producto:</label>
+        <input type="text" id="producto4" name="producto4">
+
+        <label for="precio4">Precio:</label>
+        <input type="text" id="precio4" name="precio4">
+
+        <label for="cantidad4">Cantidad:</label>
+        <input type="text" id="cantidad4" name="cantidad4">
+    </div>
+
+    <div class="product">
+        <h3>Producto 5</h3>
+        <label for="producto5">Producto:</label>
+        <input type="text" id="producto5" name="producto5">
+
+        <label for="precio5">Precio:</label>
+        <input type="text" id="precio5" name="precio5">
+
+        <label for="cantidad5">Cantidad:</label>
+        <input type="text" id="cantidad5" name="cantidad5">
+    </div>
+
+    <button type="submit">Generar Factura</button>
+</form>
+</body>
+</html>
